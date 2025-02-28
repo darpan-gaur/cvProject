@@ -1,0 +1,37 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Chen et~al.(2020)Chen, Kornblith, Norouzi, and Hinton]{chen2020simple}
+Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton.
+\newblock A simple framework for contrastive learning of visual
+  representations.
+\newblock In \emph{International conference on machine learning}, pages
+  1597--1607. PmLR, 2020.
+
+\bibitem[Patil et~al.(2023)Patil, Evanusa, and
+  JaJa]{patil2023protovaeprototypicalnetworksunsupervised}
+Vaishnavi Patil, Matthew Evanusa, and Joseph JaJa.
+\newblock Protovae: Prototypical networks for unsupervised disentanglement,
+  2023.
+
+\bibitem[Selvaraju et~al.(2017)Selvaraju, Cogswell, Das, Vedantam, Parikh, and
+  Batra]{Selvaraju_2017_ICCV}
+Ramprasaath~R. Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam,
+  Devi Parikh, and Dhruv Batra.
+\newblock Grad-cam: Visual explanations from deep networks via gradient-based
+  localization.
+\newblock In \emph{Proceedings of the IEEE International Conference on Computer
+  Vision (ICCV)}, 2017.
+
+\bibitem[Wickstrøm et~al.(2022)Wickstrøm, Trosten, Løkse, Boubekki, Øyvind
+  Mikalsen, Kampffmeyer, and
+  Jenssen]{wickstrøm2022relaxrepresentationlearningexplainability}
+Kristoffer~K. Wickstrøm, Daniel~J. Trosten, Sigurd Løkse, Ahcène Boubekki,
+  Karl Øyvind Mikalsen, Michael~C. Kampffmeyer, and Robert Jenssen.
+\newblock Relax: Representation learning explainability, 2022.
+
+\end{thebibliography}

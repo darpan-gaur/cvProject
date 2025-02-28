@@ -1,4 +1,11 @@
 \section{Introduction}
 \label{sec:intro}
 
-Lol
+Supervised learning has traditionally been the dominant paradigm in computer vision, requiring large-scale labeled datasets for training deep neural networks. However, acquiring labeled data is costly and time-consuming. Self-supervised learning (SSL) addresses this issue by enabling models to learn feature representations from unlabeled data using pretext tasks. Contrastive learning, particularly SimCLR, has shown remarkable success in this domain by maximizing the similarity between augmented views of the same image while pushing apart different images.
+
+Despite the success of SSL in learning powerful feature representations, a critical limitation remains: lack of interpretability. Unlike supervised learning, where class labels provide a semantic understanding of features, SSL representations are often opaque, making it challenging to understand what the model has learned. Explainability is crucial for:
+\begin{itemize}
+    \item Trust and Transparency: Understanding SSL feature representations can improve trust in AI systems, particularly in safety-critical applications.
+    \item Bias Detection: XAI techniques can help reveal biases in SSL models, preventing unintended discriminatory behavior.
+    \item Downstream Task Adaptability: Interpretable SSL representations can improve transferability to various tasks by ensuring that learned features align with meaningful concepts.
+\end{itemize}
