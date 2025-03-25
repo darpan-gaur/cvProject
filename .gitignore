@@ -1,0 +1,8 @@
+# dataset folder in any directory
+**/datasets/
+
+# pycache in any directory
+**/__pycache__/
+
+# ignore .pth.tar files
+*.pth.tar
