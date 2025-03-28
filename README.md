@@ -4,3 +4,4 @@ For models and data, please refer to the [OneDrive Folder](https://iith-my.share
 
 - checkpoint_0200.pth.tar download and put in cvProject/src/SimCLR/runs/Mar25_10-54-39_node3
 - checkpoint_1000.pth.tar download and put in cvProject/src/SimCLR/runs/Mar25_11-51-42_node3
+
