@@ -1,5 +1,6 @@
 # dataset folder in any directory
 **/datasets/
+**/data/
 
 # pycache in any directory
 **/__pycache__/
