@@ -1,4 +1,13 @@
 # cvProject
+## Abstract
+Self-supervised learning (SSL) has emerged as a powerfulalternative to supervised learning, enabling models to learnmeaningful representations from unlabeled data. How-ever, these learned representations often lack interpretabil-ity, making it difficult to understand their decision-makingprocess. In this project, we aim to investigate the explain-ability of SSL-based feature representations by integratingexplainable artificial intelligence (XAI) techniques. Specif-ically, we will leverage contrastive learning methods suchas SimCLR, MoCO, and SwAV, and employ Grad-CAM,importance-based techniques, and perceptual components-based techniques to interpret learned representations. Ourobjective is to evaluate the trade-off between explainabil-ity and performance, providing insights into how SSL em-beddings capture meaningful features. By improving theinterpretability of self-supervised representations, we aimto enhance their applicability in critical domains such ashealthcare, autonomous systems, and scientific discovery.
+
+## Problem Statement
+Our project aims to bridge the gap between self-supervised learning and explainable AI by investigating how to interpret SSL-learned representations. Specifically, we will:
+- Train an SSL model using contrastive learning (e.g., SimCLR, MoCo) and SwAV.
+- Apply Grad-CAM and RELAX, explainability techniques to visualize the important regions in SSL feature maps.
+- Explore perceptual component-based explainability techniques to align SSL representations with human interpretable concepts.
+- Investigate the impact of different SSL architectures on explainability.
 
 ## Project Reports
 - `fpr folder` contains the final report for the project.
@@ -22,6 +31,7 @@ For models and data, please refer to the [OneDrive Folder](https://iith-my.share
 - checkpoint_0200.pth.tar download and put in cvProject/src/SimCLR/runs/Mar25_10-54-39_node3
 - checkpoint_1000.pth.tar download and put in cvProject/src/SimCLR/runs/Mar25_11-51-42_node3
 
+## Code References
 In the src directory experiments folder containes code for all the experiments.
 
 Refernces to model code in src directory:
