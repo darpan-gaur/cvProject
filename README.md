@@ -12,7 +12,7 @@
 - `src/RELAX` folder contains the code for the RELAX model.
 - `src/Explaining-Representation-Learning-with-Perceptual-Components` folder contains the code for the Explaining Representation Learning with Perceptual Components model.
 - `src/simclrPRE` folder contains the code for the SimCLR pretrained model.
-- `src/Experiments` folder contains the code for the TSNE and Augmentation experiments.
+- `src/Experiments` folder contains the code for the TSNE, Augmentation, Perceptual Concept Explainability  experiments.
 - `src/GradCAM` folder contains the code for the GradCAM Implementation and visualization.
 
 
