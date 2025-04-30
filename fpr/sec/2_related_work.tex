@@ -5,7 +5,7 @@
 \subsubsection{SimCLR: Simple Framework for Contrastive Learning of Visual Representations}
 SimCLR\cite{chen2020simple} is a contrastive self-supervised learning framework that learns visual representations of images without requiring labeled data. The paper explores various components of the model and showcases the importance of each component via numbers from experiments.
 
-The first key component of the SimCLR model is the augmentations it applies that leads to the positive and negative pairs needed to perform contrastive learning. The mentioned model stochastically chooses two augmentations from the chosen three augmentations to get the training pairs. The paper also mentions various other augmentations but reinforces the choice of the three augmentations (random crop, random colorization, and random Gaussian noise).
+The first key component of the SimCLR model is the augmentations it applies, which lead to the positive and negative pairs needed to perform contrastive learning. The mentioned model stochastically chooses two augmentations from the chosen three augmentations to get the training pairs. The paper also mentions various other augmentations but reinforces the choice of the three augmentations (random crop, random colorization, and random Gaussian noise).
 
 \begin{figure}[h]
 \small
@@ -117,7 +117,7 @@ Grad-CAM generates class-specific saliency maps by computing the importance of f
 
 \subsubsection{RELAX: Representation Learning Explainability}
 \begin{itemize}
-    \item Representation Learning Explainability (RELAX)\cite{wickstrøm2022relaxrepresentationlearningexplainability} is a novel framework for explaining representations that also quantify their uncertainty.
+    \item Representation Learning Explainability (RELAX)\cite{chen2020simple} is a novel framework for explaining representations that also quantify their uncertainty.
     \item It measures the change in the representation of an image when compared with the masked version of the image.
     \item The central idea is that when informative parts are masked out, the representation should change significantly, i.e., the similarity between masked and unmasked representations should be low when informative parts are masked out and high when uninformative parts are masked out.
 \end{itemize} 
@@ -152,9 +152,7 @@ The figure \ref{fig:relax}, shows an example where RELAX is used to investigate 
 \end{figure}
 
 \subsubsection{Explaining Representation Learning with Perceptual Components \cite{yarici2024explaining}}
-Introduce a novel method to analyze representation spaces using three key perceptual components: color, shape, and texture. We employ selective
-masking of these components to observe changes in represen-
-tations, resulting in distinct importance maps for each. Here importance and uncertainty are found using the RELAX method. \\
+The paper introduces a novel method to analyze representation spaces using three key perceptual components: color, shape, and texture. We employ selective masking of these components to observe changes in representations, resulting in distinct importance maps for each. Here, importance and uncertainty are found using the RELAX method. \\
 \\
 \textbf{Making strategies for Perceptual Components:}
 \vspace{3mm}

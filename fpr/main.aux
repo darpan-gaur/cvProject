@@ -5,7 +5,7 @@
 \citation{chen2020simple}
 \citation{he2020momentum}
 \citation{caron2020unsupervised}
-\citation{selvaraju2017grad}
+\citation{Selvaraju_2017_ICCV}
 \citation{wickstrom2023relax}
 \citation{yarici2024explaining}
 \citation{chen2020simple}
@@ -18,7 +18,7 @@
 \@writefile{brf}{\backcite{chen2020simple}{{1}{2}{section.2}}}
 \@writefile{brf}{\backcite{he2020momentum}{{1}{2}{section.2}}}
 \@writefile{brf}{\backcite{caron2020unsupervised}{{1}{2}{section.2}}}
-\@writefile{brf}{\backcite{selvaraju2017grad}{{1}{2}{section.2}}}
+\@writefile{brf}{\backcite{Selvaraju_2017_ICCV}{{1}{2}{section.2}}}
 \@writefile{brf}{\backcite{wickstrom2023relax}{{1}{2}{section.2}}}
 \@writefile{brf}{\backcite{yarici2024explaining}{{1}{2}{section.2}}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}\hskip -1em.~Literature Review}{1}{section.3}\protected@file@percent }
@@ -43,7 +43,7 @@
 \newlabel{eq:moco}{{2}{2}{\texorpdfstring {\hskip -1em.~}{}MoCo: Momentum Contrast for Unsupervised Visual Representation Learning}{equation.3.2}{}}
 \newlabel{eq:moco@cref}{{[equation][2][]2}{[1][2][]2}}
 \citation{Selvaraju_2017_ICCV}
-\citation{wickstrøm2022relaxrepresentationlearningexplainability}
+\citation{chen2020simple}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Momentum Contrast (MoCo) trains a visual representation encoder by matching an encoded query $q$ to a dictionary of encoded keys using a contrastive loss. The dictionary keys $\{k_0, k_1, k_2, ...\}$ are defined on-the-fly by a set of data samples. The dictionary is built as a queue, with the current mini-batch enqueued and the oldest mini-batch dequeued, decoupling it from the mini-batch size. The keys are encoded by a slowly progressing encoder, driven by a momentum update with the query encoder. This method enables a large and consistent dictionary for learning visual representations. }}{3}{figure.caption.3}\protected@file@percent }
 \newlabel{fig:teaser}{{3}{3}{Momentum Contrast (MoCo) trains a visual representation encoder by matching an encoded query $q$ to a dictionary of encoded keys using a contrastive loss. The dictionary keys $\{k_0, k_1, k_2, ...\}$ are defined on-the-fly by a set of data samples. The dictionary is built as a queue, with the current mini-batch enqueued and the oldest mini-batch dequeued, decoupling it from the mini-batch size. The keys are encoded by a slowly progressing encoder, driven by a momentum update with the query encoder. This method enables a large and consistent dictionary for learning visual representations}{figure.caption.3}{}}
 \newlabel{fig:teaser@cref}{{[figure][3][]3}{[1][2][]3}}
@@ -56,9 +56,8 @@
 \newlabel{fig:gradcam}{{4}{3}{Grad-CAM visualization of a ResNet-50 model for the class "zebra." The heatmap highlights the regions in the input image that are most relevant for the model's prediction}{figure.caption.4}{}}
 \newlabel{fig:gradcam@cref}{{[figure][4][]4}{[1][3][]3}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}\hskip -1em.~RELAX: Representation Learning Explainability}{3}{subsubsection.3.2.2}\protected@file@percent }
-\@writefile{brf}{\backcite{wickstrøm2022relaxrepresentationlearningexplainability}{{3}{3.2.2}{subsubsection.3.2.2}}}
+\@writefile{brf}{\backcite{chen2020simple}{{3}{3.2.2}{subsubsection.3.2.2}}}
 \citation{yarici2024explaining}
-\citation{chen2020simple}
 \newlabel{eq:sim}{{3.2.2}{4}{\texorpdfstring {\hskip -1em.~}{}RELAX: Representation Learning Explainability}{subsubsection.3.2.2}{}}
 \newlabel{eq:sim@cref}{{[subsubsection][2][3,2]3.2.2}{[1][3][]4}}
 \newlabel{eq:rel1}{{3.2.2}{4}{\texorpdfstring {\hskip -1em.~}{}RELAX: Representation Learning Explainability}{subsubsection.3.2.2}{}}
@@ -80,64 +79,99 @@
 \@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.~Experiments}{4}{section.5}\protected@file@percent }
 \newlabel{sec:experiments}{{5}{4}{\texorpdfstring {\hskip -1em.~}{}Experiments}{section.5}{}}
 \newlabel{sec:experiments@cref}{{[section][5][]5}{[1][4][]4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}\hskip -1em.~TSNE plot Visualization}{4}{subsection.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}\hskip -1em.~Effect of Augmentation on Representation and Explainability}{4}{subsection.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}\hskip -1em.~GradCAM plots Visualization}{4}{subsection.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}\hskip -1em.~Perpectual Component Explainability}{4}{subsection.5.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}\hskip -1em.~SimClr}{4}{subsection.5.5}\protected@file@percent }
-\@writefile{brf}{\backcite{chen2020simple}{{4}{5.5}{subsection.5.5}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces t-SNE visualizations of CIFAR-10 test set embeddings from various contrastive models. SimCLR was trained on CIFAR-10, while SwAV, MoCo, and SimCLR ResNet-50 were pretrained on ImageNet. Each point is colored by the ground-truth label. Clearer clustering in the SimCLR-CIFAR10 plot highlights the importance of domain-specific training for representation quality.}}{5}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:tsne_plots}{{6}{5}{t-SNE visualizations of CIFAR-10 test set embeddings from various contrastive models. SimCLR was trained on CIFAR-10, while SwAV, MoCo, and SimCLR ResNet-50 were pretrained on ImageNet. Each point is colored by the ground-truth label. Clearer clustering in the SimCLR-CIFAR10 plot highlights the importance of domain-specific training for representation quality}{figure.caption.6}{}}
+\newlabel{fig:tsne_plots@cref}{{[figure][6][]6}{[1][4][]5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}\hskip -1em.~Visualizing Embedding Spaces of Contrastive Learning Models via t-SNE [\ref {fig:tsne_plots}]}{6}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}\hskip -1em.~Evaluating Invariance of Saliency in Self-Supervised Models Using RELAX}{6}{subsection.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Intersection over Union (IoU) between original and augmented image importance masks for different self-supervised models across four augmentations.}}{6}{table.caption.7}\protected@file@percent }
+\newlabel{tab:iou_results}{{1}{6}{Intersection over Union (IoU) between original and augmented image importance masks for different self-supervised models across four augmentations}{table.caption.7}{}}
+\newlabel{tab:iou_results@cref}{{[table][1][]1}{[1][6][]6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}\hskip -1em.~GradCAM Experimentation}{6}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}\hskip -1em.~Approaches to implement Grad-CAM}{6}{subsubsection.5.3.1}\protected@file@percent }
+\citation{yarici2024explaining}
+\citation{yarici2024explaining}
+\citation{ranftl2020towards}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}\hskip -1em.~Interpretability of Learned Features:}{7}{subsubsection.5.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}\hskip -1em.~Perceptual Component Explainability}{7}{subsection.5.4}\protected@file@percent }
+\@writefile{brf}{\backcite{yarici2024explaining}{{7}{5.4}{subsection.5.4}}}
+\@writefile{brf}{\backcite{yarici2024explaining}{{7}{5.4}{figure.caption.9}}}
+\@writefile{brf}{\backcite{ranftl2020towards}{{7}{5.4}{figure.caption.9}}}
+\newlabel{fig:gc1}{{7a}{7}{Heatmap augmentation with SwAW}{figure.caption.8}{}}
+\newlabel{fig:gc1@cref}{{[subfigure][1][7]7a}{[1][7][]7}}
+\newlabel{sub@fig:gc1}{{a}{7}{Heatmap augmentation with SwAW}{figure.caption.8}{}}
+\newlabel{sub@fig:gc1@cref}{{[subfigure][1][7]7a}{[1][7][]7}}
+\newlabel{fig:gc2}{{7b}{7}{Heatmap augmentation with simCLR}{figure.caption.8}{}}
+\newlabel{fig:gc2@cref}{{[subfigure][2][7]7b}{[1][7][]7}}
+\newlabel{sub@fig:gc2}{{b}{7}{Heatmap augmentation with simCLR}{figure.caption.8}{}}
+\newlabel{sub@fig:gc2@cref}{{[subfigure][2][7]7b}{[1][7][]7}}
+\newlabel{fig:gc3}{{7c}{7}{Max similarity pair}{figure.caption.8}{}}
+\newlabel{fig:gc3@cref}{{[subfigure][3][7]7c}{[1][7][]7}}
+\newlabel{sub@fig:gc3}{{c}{7}{Max similarity pair}{figure.caption.8}{}}
+\newlabel{sub@fig:gc3@cref}{{[subfigure][3][7]7c}{[1][7][]7}}
+\newlabel{fig:gc4}{{7d}{7}{Min simlarity pair}{figure.caption.8}{}}
+\newlabel{fig:gc4@cref}{{[subfigure][4][7]7d}{[1][7][]7}}
+\newlabel{sub@fig:gc4}{{d}{7}{Min simlarity pair}{figure.caption.8}{}}
+\newlabel{sub@fig:gc4@cref}{{[subfigure][4][7]7d}{[1][7][]7}}
+\newlabel{fig:gc5}{{7e}{7}{Across class comparison}{figure.caption.8}{}}
+\newlabel{fig:gc5@cref}{{[subfigure][5][7]7e}{[1][7][]7}}
+\newlabel{sub@fig:gc5}{{e}{7}{Across class comparison}{figure.caption.8}{}}
+\newlabel{sub@fig:gc5@cref}{{[subfigure][5][7]7e}{[1][7][]7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Interpretability experiments using GradCAM}}{7}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:gc_plots}{{7}{7}{Interpretability experiments using GradCAM}{figure.caption.8}{}}
+\newlabel{fig:gc_plots@cref}{{[figure][7][]7}{[1][7][]7}}
+\citation{chen2020simple}
 \citation{wickstrom2023relax}
-\newlabel{fig:gc1}{{6a}{5}{Heatmap augmentation with SwAW}{figure.caption.6}{}}
-\newlabel{fig:gc1@cref}{{[subfigure][1][6]6a}{[1][4][]5}}
-\newlabel{sub@fig:gc1}{{a}{5}{Heatmap augmentation with SwAW}{figure.caption.6}{}}
-\newlabel{sub@fig:gc1@cref}{{[subfigure][1][6]6a}{[1][4][]5}}
-\newlabel{fig:gc2}{{6b}{5}{Heatmap augmentation with simCLR}{figure.caption.6}{}}
-\newlabel{fig:gc2@cref}{{[subfigure][2][6]6b}{[1][4][]5}}
-\newlabel{sub@fig:gc2}{{b}{5}{Heatmap augmentation with simCLR}{figure.caption.6}{}}
-\newlabel{sub@fig:gc2@cref}{{[subfigure][2][6]6b}{[1][4][]5}}
-\newlabel{fig:gc3}{{6c}{5}{Max similarity pair}{figure.caption.6}{}}
-\newlabel{fig:gc3@cref}{{[subfigure][3][6]6c}{[1][4][]5}}
-\newlabel{sub@fig:gc3}{{c}{5}{Max similarity pair}{figure.caption.6}{}}
-\newlabel{sub@fig:gc3@cref}{{[subfigure][3][6]6c}{[1][4][]5}}
-\newlabel{fig:gc4}{{6d}{5}{Min simlarity pair}{figure.caption.6}{}}
-\newlabel{fig:gc4@cref}{{[subfigure][4][6]6d}{[1][4][]5}}
-\newlabel{sub@fig:gc4}{{d}{5}{Min simlarity pair}{figure.caption.6}{}}
-\newlabel{sub@fig:gc4@cref}{{[subfigure][4][6]6d}{[1][4][]5}}
-\newlabel{fig:gc5}{{6e}{5}{Across class comparison}{figure.caption.6}{}}
-\newlabel{fig:gc5@cref}{{[subfigure][5][6]6e}{[1][4][]5}}
-\newlabel{sub@fig:gc5}{{e}{5}{Across class comparison}{figure.caption.6}{}}
-\newlabel{sub@fig:gc5@cref}{{[subfigure][5][6]6e}{[1][4][]5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Iterpretability eperiments using GradCAM}}{5}{figure.caption.6}\protected@file@percent }
-\newlabel{fig:gc_plots}{{6}{5}{Iterpretability eperiments using GradCAM}{figure.caption.6}{}}
-\newlabel{fig:gc_plots@cref}{{[figure][6][]6}{[1][4][]5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Loss and Accuracy plot for SimClr}}{5}{figure.caption.7}\protected@file@percent }
-\newlabel{fig:loss_accuracy}{{7}{5}{Loss and Accuracy plot for SimClr}{figure.caption.7}{}}
-\newlabel{fig:loss_accuracy@cref}{{[figure][7][]7}{[1][5][]5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}\hskip -1em.~Relax}{5}{subsection.5.6}\protected@file@percent }
-\@writefile{brf}{\backcite{wickstrom2023relax}{{5}{5.6}{subsection.5.6}}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}\hskip -1em.~Observations}{5}{section.6}\protected@file@percent }
-\newlabel{sec:observations}{{6}{5}{\texorpdfstring {\hskip -1em.~}{}Observations}{section.6}{}}
-\newlabel{sec:observations@cref}{{[section][6][]6}{[1][5][]5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Input image alongside its low-pass and high-pass filtered versions to isolate frequency components. These versions are used to evaluate the model's reliance on low- and high-frequency visual information.}}{8}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:freq_components}{{8}{8}{Input image alongside its low-pass and high-pass filtered versions to isolate frequency components. These versions are used to evaluate the model's reliance on low- and high-frequency visual information}{figure.caption.9}{}}
+\newlabel{fig:freq_components@cref}{{[figure][8][]8}{[1][7][]8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Input image, sharpened version, estimated depth map, and brightened image. These perceptual transformations are used to assess sensitivity of models to brightness, depth cues, and sharpness.}}{8}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:perceptual_variants}{{9}{8}{Input image, sharpened version, estimated depth map, and brightened image. These perceptual transformations are used to assess sensitivity of models to brightness, depth cues, and sharpness}{figure.caption.10}{}}
+\newlabel{fig:perceptual_variants@cref}{{[figure][9][]9}{[1][8][]8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}\hskip -1em.~SimClr}{8}{subsection.5.5}\protected@file@percent }
+\@writefile{brf}{\backcite{chen2020simple}{{8}{5.5}{subsection.5.5}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Loss and Accuracy plot for SimClr}}{8}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:loss_accuracy}{{10}{8}{Loss and Accuracy plot for SimClr}{figure.caption.11}{}}
+\newlabel{fig:loss_accuracy@cref}{{[figure][10][]10}{[1][8][]8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}\hskip -1em.~Relax}{8}{subsection.5.6}\protected@file@percent }
+\@writefile{brf}{\backcite{wickstrom2023relax}{{8}{5.6}{subsection.5.6}}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}\hskip -1em.~Observations}{8}{section.6}\protected@file@percent }
+\newlabel{sec:observations}{{6}{8}{\texorpdfstring {\hskip -1em.~}{}Observations}{section.6}{}}
+\newlabel{sec:observations@cref}{{[section][6][]6}{[1][8][]8}}
 \bibstyle{ieeenat_fullname}
 \bibdata{main}
 \bibcite{caron2020unsupervised}{{1}{2020}{{Caron et~al.}}{{Caron, Misra, Mairal, Goyal, Bojanowski, and Joulin}}}
 \bibcite{chen2020simple}{{2}{2020}{{Chen et~al.}}{{Chen, Kornblith, Norouzi, and Hinton}}}
 \bibcite{he2020momentum}{{3}{2020}{{He et~al.}}{{He, Fan, Wu, Xie, and Girshick}}}
-\bibcite{Selvaraju_2017_ICCV}{{4}{2017{}}{{Selvaraju et~al.}}{{Selvaraju, Cogswell, Das, Vedantam, Parikh, and Batra}}}
-\bibcite{selvaraju2017grad}{{5}{2017{}}{{Selvaraju et~al.}}{{Selvaraju, Cogswell, Das, Vedantam, Parikh, and Batra}}}
+\bibcite{ranftl2020towards}{{4}{2020}{{Ranftl et~al.}}{{Ranftl, Lasinger, Hafner, Schindler, and Koltun}}}
+\bibcite{Selvaraju_2017_ICCV}{{5}{2017}{{Selvaraju et~al.}}{{Selvaraju, Cogswell, Das, Vedantam, Parikh, and Batra}}}
 \bibcite{wickstrom2023relax}{{6}{2023}{{Wickstr{\o }m et~al.}}{{Wickstr{\o }m, Trosten, L{\o }kse, Boubekki, Mikalsen, Kampffmeyer, and Jenssen}}}
-\bibcite{wickstrøm2022relaxrepresentationlearningexplainability}{{7}{2022}{{Wickstrøm et~al.}}{{Wickstrøm, Trosten, Løkse, Boubekki, Øyvind Mikalsen, Kampffmeyer, and Jenssen}}}
-\bibcite{yarici2024explaining}{{8}{2024}{{Yarici et~al.}}{{Yarici, Kokilepersaud, Prabhushankar, and AlRegib}}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces RELAX explanation and uncertanity on CIFAR-10 dataset}}{6}{figure.caption.8}\protected@file@percent }
-\newlabel{fig:result1}{{8}{6}{RELAX explanation and uncertanity on CIFAR-10 dataset}{figure.caption.8}{}}
-\newlabel{fig:result1@cref}{{[figure][8][]8}{[1][5][]6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces RELAX explanation and uncertanity on CIFAR-10 dataset}}{6}{figure.caption.9}\protected@file@percent }
-\newlabel{fig:result2}{{9}{6}{RELAX explanation and uncertanity on CIFAR-10 dataset}{figure.caption.9}{}}
-\newlabel{fig:result2@cref}{{[figure][9][]9}{[1][5][]6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces RELAX explanation and uncertanity on CIFAR-10 dataset}}{6}{figure.caption.10}\protected@file@percent }
-\newlabel{fig:result3}{{10}{6}{RELAX explanation and uncertanity on CIFAR-10 dataset}{figure.caption.10}{}}
-\newlabel{fig:result3@cref}{{[figure][10][]10}{[1][5][]6}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}\hskip -1em.~Code Availability}{6}{section.7}\protected@file@percent }
-\newlabel{sec:code_avail}{{7}{6}{\texorpdfstring {\hskip -1em.~}{}Code Availability}{section.7}{}}
-\newlabel{sec:code_avail@cref}{{[section][7][]7}{[1][6][]6}}
-\gdef \@abspage@last{6}
+\bibcite{yarici2024explaining}{{7}{2024}{{Yarici et~al.}}{{Yarici, Kokilepersaud, Prabhushankar, and AlRegib}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces RELAX explanation and uncertanity on CIFAR-10 dataset}}{9}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:result1}{{11}{9}{RELAX explanation and uncertanity on CIFAR-10 dataset}{figure.caption.12}{}}
+\newlabel{fig:result1@cref}{{[figure][11][]11}{[1][8][]9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces RELAX explanation and uncertanity on CIFAR-10 dataset}}{9}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:result2}{{12}{9}{RELAX explanation and uncertanity on CIFAR-10 dataset}{figure.caption.13}{}}
+\newlabel{fig:result2@cref}{{[figure][12][]12}{[1][8][]9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces RELAX explanation and uncertanity on CIFAR-10 dataset}}{9}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:result3}{{13}{9}{RELAX explanation and uncertanity on CIFAR-10 dataset}{figure.caption.14}{}}
+\newlabel{fig:result3@cref}{{[figure][13][]13}{[1][8][]9}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}\hskip -1em.~Code Availability}{9}{section.7}\protected@file@percent }
+\newlabel{sec:code_avail}{{7}{9}{\texorpdfstring {\hskip -1em.~}{}Code Availability}{section.7}{}}
+\newlabel{sec:code_avail@cref}{{[section][7][]7}{[1][9][]9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces RELAX visualizations for the SwAV model across various augmentations: horizontal flip, vertical flip, 15° rotation, and grayscale. Importance maps remain focused on the object (dog), and uncertainty is relatively low, showcasing SwAV's strong spatial invariance and robust attention.}}{10}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:swav_relax}{{14}{10}{RELAX visualizations for the SwAV model across various augmentations: horizontal flip, vertical flip, 15° rotation, and grayscale. Importance maps remain focused on the object (dog), and uncertainty is relatively low, showcasing SwAV's strong spatial invariance and robust attention}{figure.caption.16}{}}
+\newlabel{fig:swav_relax@cref}{{[figure][14][]14}{[1][9][]10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces RELAX visualizations for the MoCo model under similar augmentations. The model exhibits higher uncertainty and shifting importance regions, particularly under strong geometric changes, suggesting comparatively lower invariance and stability.}}{11}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:moco_relax}{{15}{11}{RELAX visualizations for the MoCo model under similar augmentations. The model exhibits higher uncertainty and shifting importance regions, particularly under strong geometric changes, suggesting comparatively lower invariance and stability}{figure.caption.17}{}}
+\newlabel{fig:moco_relax@cref}{{[figure][15][]15}{[1][9][]11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces RELAX visualizations for SimCLR (trained from scratch on CIFAR-10). The importance regions are generally focused on the objects (horses), but there is moderate spatial drift and variable uncertainty across augmentations, reflecting a balance between sensitivity and consistency.}}{12}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:simclr_relax}{{16}{12}{RELAX visualizations for SimCLR (trained from scratch on CIFAR-10). The importance regions are generally focused on the objects (horses), but there is moderate spatial drift and variable uncertainty across augmentations, reflecting a balance between sensitivity and consistency}{figure.caption.18}{}}
+\newlabel{fig:simclr_relax@cref}{{[figure][16][]16}{[1][9][]12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Perceptual importance maps showing the contribution of color, shape, and texture features across three models—SimCLR, SwAV, and MoCo—using the RELAX explanation method.}}{13}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:relax_perceptual_maps}{{17}{13}{Perceptual importance maps showing the contribution of color, shape, and texture features across three models—SimCLR, SwAV, and MoCo—using the RELAX explanation method}{figure.caption.19}{}}
+\newlabel{fig:relax_perceptual_maps@cref}{{[figure][17][]17}{[1][9][]13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Extended perceptual component attribution maps including low-frequency, high-frequency, brightness, depth, and sharpness, comparing the same three models. These help identify additional cues the models may implicitly rely on.}}{14}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:relax_extended_components}{{18}{14}{Extended perceptual component attribution maps including low-frequency, high-frequency, brightness, depth, and sharpness, comparing the same three models. These help identify additional cues the models may implicitly rely on}{figure.caption.20}{}}
+\newlabel{fig:relax_extended_components@cref}{{[figure][18][]18}{[1][9][]14}}
+\gdef \@abspage@last{14}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -20,24 +20,20 @@ Kaiming He, Haoqi Fan, Yuxin Wu, Saining Xie, and Ross Girshick.
 \newblock Momentum contrast for unsupervised visual representation learning.
 \newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 9729--9738, 2020.
 
-\bibitem[Selvaraju et~al.(2017{\natexlab{a}})Selvaraju, Cogswell, Das, Vedantam, Parikh, and Batra]{Selvaraju_2017_ICCV}
+\bibitem[Ranftl et~al.(2020)Ranftl, Lasinger, Hafner, Schindler, and Koltun]{ranftl2020towards}
+Ren{\'e} Ranftl, Katrin Lasinger, David Hafner, Konrad Schindler, and Vladlen Koltun.
+\newblock Towards robust monocular depth estimation: Mixing datasets for zero-shot cross-dataset transfer.
+\newblock \emph{IEEE transactions on pattern analysis and machine intelligence}, 44\penalty0 (3):\penalty0 1623--1637, 2020.
+
+\bibitem[Selvaraju et~al.(2017)Selvaraju, Cogswell, Das, Vedantam, Parikh, and Batra]{Selvaraju_2017_ICCV}
 Ramprasaath~R. Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam, Devi Parikh, and Dhruv Batra.
 \newblock Grad-cam: Visual explanations from deep networks via gradient-based localization.
-\newblock In \emph{Proceedings of the IEEE International Conference on Computer Vision (ICCV)}, 2017{\natexlab{a}}.
-
-\bibitem[Selvaraju et~al.(2017{\natexlab{b}})Selvaraju, Cogswell, Das, Vedantam, Parikh, and Batra]{selvaraju2017grad}
-Ramprasaath~R Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam, Devi Parikh, and Dhruv Batra.
-\newblock Grad-cam: Visual explanations from deep networks via gradient-based localization.
-\newblock In \emph{Proceedings of the IEEE international conference on computer vision}, pages 618--626, 2017{\natexlab{b}}.
+\newblock In \emph{Proceedings of the IEEE International Conference on Computer Vision (ICCV)}, 2017.
 
 \bibitem[Wickstr{\o}m et~al.(2023)Wickstr{\o}m, Trosten, L{\o}kse, Boubekki, Mikalsen, Kampffmeyer, and Jenssen]{wickstrom2023relax}
 Kristoffer~K Wickstr{\o}m, Daniel~J Trosten, Sigurd L{\o}kse, Ahc{\`e}ne Boubekki, Karl~{\O}yvind Mikalsen, Michael~C Kampffmeyer, and Robert Jenssen.
 \newblock Relax: Representation learning explainability.
 \newblock \emph{International Journal of Computer Vision}, 131\penalty0 (6):\penalty0 1584--1610, 2023.
-
-\bibitem[Wickstrøm et~al.(2022)Wickstrøm, Trosten, Løkse, Boubekki, Øyvind Mikalsen, Kampffmeyer, and Jenssen]{wickstrøm2022relaxrepresentationlearningexplainability}
-Kristoffer~K. Wickstrøm, Daniel~J. Trosten, Sigurd Løkse, Ahcène Boubekki, Karl Øyvind Mikalsen, Michael~C. Kampffmeyer, and Robert Jenssen.
-\newblock Relax: Representation learning explainability, 2022.
 
 \bibitem[Yarici et~al.(2024)Yarici, Kokilepersaud, Prabhushankar, and AlRegib]{yarici2024explaining}
 Yavuz Yarici, Kiran Kokilepersaud, Mohit Prabhushankar, and Ghassan AlRegib.
