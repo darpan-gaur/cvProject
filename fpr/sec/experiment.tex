@@ -6,6 +6,37 @@
 \subsection{Effect of Augmentation on Representation and Explainability}  
 
 \subsection{GradCAM plots Visualization}
+% single figure containing 5 images
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{\linewidth}
+        \includegraphics[width=\linewidth]{images/gc1.png}
+        \caption{Heatmap augmentation with SwAW}
+        \label{fig:gc1}
+    \end{subfigure}\vspace{10pt}
+    \begin{subfigure}{\linewidth}
+        \includegraphics[width=\linewidth]{images/gc2.png}
+        \caption{Heatmap augmentation with simCLR}
+        \label{fig:gc2}
+    \end{subfigure}\vspace{10pt}
+    \begin{subfigure}{\linewidth}
+        \includegraphics[width=\linewidth]{images/gc3.jpeg}
+        \caption{Max similarity pair} 
+        \label{fig:gc3}
+    \end{subfigure}\vspace{10pt}
+    \begin{subfigure}{\linewidth}
+        \includegraphics[width=\linewidth]{images/gc4.jpeg}
+        \caption{Min simlarity pair }
+        \label{fig:gc4}
+    \end{subfigure}\vspace{10pt}
+    \begin{subfigure}{\linewidth}
+        \includegraphics[width=\linewidth]{images/gc5.jpeg}
+        \caption{Across class comparison}
+        \label{fig:gc5}
+    \end{subfigure}
+    \caption{Iterpretability eperiments using GradCAM}
+    \label{fig:gc_plots}
+\end{figure}
 
 \subsection{Perpectual Component Explainability}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.2)  30 APR 2025 17:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.2)  30 APR 2025 22:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -618,24 +618,24 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 
 ]
-<images/oto_simple.pdf, id=111, 743.77875pt x 304.13625pt>
+<images/oto_simple.pdf, id=115, 743.77875pt x 304.13625pt>
 File: images/oto_simple.pdf Graphic file (type pdf)
 <use images/oto_simple.pdf>
 Package pdftex.def Info: images/oto_simple.pdf  used on input line 50.
 (pdftex.def)             Requested size: 231.96497pt x 94.85292pt.
-<images/MoCo_Architecture.png, id=113, 1165.35374pt x 945.5325pt>
+<images/MoCo_Architecture.png, id=117, 1165.35374pt x 945.5325pt>
 File: images/MoCo_Architecture.png Graphic file (type png)
 <use images/MoCo_Architecture.png>
 Package pdftex.def Info: images/MoCo_Architecture.png  used on input line 63.
 (pdftex.def)             Requested size: 154.1369pt x 125.05882pt.
  [2 <./images/oto_simple.pdf>]
-<./images/Grad-CAM_approach.png, id=173, 1778.645pt x 650.43pt>
+<./images/Grad-CAM_approach.png, id=176, 1778.645pt x 650.43pt>
 File: ./images/Grad-CAM_approach.png Graphic file (type png)
 <use ./images/Grad-CAM_approach.png>
 Package pdftex.def Info: ./images/Grad-CAM_approach.png  used on input line 113.
 (pdftex.def)             Requested size: 233.52304pt x 85.39255pt.
  [3 <./images/MoCo_Architecture.png> <./images/Grad-CAM_approach.png>]
-<./images/VOCexample.pdf, id=193, 571.15819pt x 281.69615pt>
+<./images/VOCexample.pdf, id=196, 571.15819pt x 281.69615pt>
 File: ./images/VOCexample.pdf Graphic file (type pdf)
 <use ./images/VOCexample.pdf>
 Package pdftex.def Info: ./images/VOCexample.pdf  used on input line 149.
@@ -669,26 +669,56 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\new@ifnextchar' on input line 154.
 
-) (./sec/3_dataset.tex) (./sec/experiment.tex [4 <./images/VOCexample.pdf>]
-<images/loss_accuracy.png, id=252, 867.24pt x 361.35pt>
+) (./sec/3_dataset.tex) (./sec/experiment.tex
+<images/gc1.png, id=198, 1178.4025pt x 408.52625pt>
+File: images/gc1.png Graphic file (type png)
+<use images/gc1.png>
+Package pdftex.def Info: images/gc1.png  used on input line 13.
+(pdftex.def)             Requested size: 237.13594pt x 82.20872pt.
+<images/gc2.png, id=199, 1178.4025pt x 408.52625pt>
+File: images/gc2.png Graphic file (type png)
+<use images/gc2.png>
+Package pdftex.def Info: images/gc2.png  used on input line 18.
+(pdftex.def)             Requested size: 237.13594pt x 82.20872pt.
+<images/gc3.jpeg, id=200, 1145.27875pt x 398.48875pt>
+File: images/gc3.jpeg Graphic file (type jpg)
+<use images/gc3.jpeg>
+Package pdftex.def Info: images/gc3.jpeg  used on input line 23.
+(pdftex.def)             Requested size: 237.13594pt x 82.5055pt.
+<images/gc4.jpeg, id=201, 1145.27875pt x 398.48875pt>
+File: images/gc4.jpeg Graphic file (type jpg)
+<use images/gc4.jpeg>
+Package pdftex.def Info: images/gc4.jpeg  used on input line 28.
+(pdftex.def)             Requested size: 237.13594pt x 82.5055pt.
+<images/gc5.jpeg, id=202, 1145.27875pt x 398.48875pt>
+File: images/gc5.jpeg Graphic file (type jpg)
+<use images/gc5.jpeg>
+Package pdftex.def Info: images/gc5.jpeg  used on input line 33.
+(pdftex.def)             Requested size: 237.13594pt x 82.5055pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4 <./images/VOCexample.pdf>]
+<images/loss_accuracy.png, id=259, 867.24pt x 361.35pt>
 File: images/loss_accuracy.png Graphic file (type png)
 <use images/loss_accuracy.png>
-Package pdftex.def Info: images/loss_accuracy.png  used on input line 36.
+Package pdftex.def Info: images/loss_accuracy.png  used on input line 67.
 (pdftex.def)             Requested size: 237.13594pt x 98.8064pt.
-<images/Result1.png, id=259, 813.7602pt x 252.945pt>
+<images/Result1.png, id=266, 813.7602pt x 252.945pt>
 File: images/Result1.png Graphic file (type png)
 <use images/Result1.png>
-Package pdftex.def Info: images/Result1.png  used on input line 47.
+Package pdftex.def Info: images/Result1.png  used on input line 78.
 (pdftex.def)             Requested size: 237.13594pt x 73.70724pt.
-<images/Result2.png, id=260, 813.7602pt x 252.945pt>
+<images/Result2.png, id=267, 813.7602pt x 252.945pt>
 File: images/Result2.png Graphic file (type png)
 <use images/Result2.png>
-Package pdftex.def Info: images/Result2.png  used on input line 53.
+Package pdftex.def Info: images/Result2.png  used on input line 84.
 (pdftex.def)             Requested size: 237.13594pt x 73.70724pt.
-<images/Result3.png, id=261, 813.7602pt x 252.945pt>
+<images/Result3.png, id=268, 813.7602pt x 252.945pt>
 File: images/Result3.png Graphic file (type png)
 <use images/Result3.png>
-Package pdftex.def Info: images/Result3.png  used on input line 59.
+Package pdftex.def Info: images/Result3.png  used on input line 90.
 (pdftex.def)             Requested size: 237.13594pt x 73.70724pt.
 ) (./sec/6_observations.tex
 
@@ -700,13 +730,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./sec/codeAvail.tex) (./main.bbl (./main.brf)
+[5 <./images/gc1.png> <./images/gc2.png> <./images/gc3.jpeg> <./images/gc4.jpeg> <./images/gc5.jpeg> <./images/loss_accuracy.png>]) (./sec/codeAvail.tex) (./main.bbl (./main.brf)
 \tf@brf=\write5
 \openout5 = `main.brf'.
 
- [5 <./images/loss_accuracy.png> <./images/Result1.png> <./images/Result2.png> <./images/Result3.png>]) [6
-
-] (./main.aux)
+) [6 <./images/Result1.png> <./images/Result2.png> <./images/Result3.png>] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -714,21 +742,21 @@ L3 programming layer <2024-01-22>
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D1C16BC4857F12CC6C1435DD9FC2ADCC;5095.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: BC98484E5D756E43393A6E4B4B709EE3;720.
+(rerunfilecheck)             Checksum: 5130958396CF7F961BE834CF92E14D19;825.
  ) 
 Here is how much of TeX's memory you used:
- 25134 strings out of 474222
- 469356 string characters out of 5748734
+ 25203 strings out of 474222
+ 470651 string characters out of 5748734
  1946975 words of memory out of 5000000
- 46886 multiletter control sequences out of 15000+600000
- 593555 words of font info for 121 fonts, out of 8000000 for 9000
+ 46953 multiletter control sequences out of 15000+600000
+ 595140 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,11n,93p,1069b,921s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,11n,93p,1122b,921s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 1134993 bytes).
+Output written on main.pdf (6 pages, 1524118 bytes).
 PDF statistics:
- 394 PDF objects out of 1000 (max. 8388607)
- 284 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
- 221 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 404 PDF objects out of 1000 (max. 8388607)
+ 289 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 246 words of extra memory for PDF output out of 10000 (max. 10000000)
 

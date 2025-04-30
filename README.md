@@ -5,21 +5,11 @@ For models and data, please refer to the [OneDrive Folder](https://iith-my.share
 - checkpoint_0200.pth.tar download and put in cvProject/src/SimCLR/runs/Mar25_10-54-39_node3
 - checkpoint_1000.pth.tar download and put in cvProject/src/SimCLR/runs/Mar25_11-51-42_node3
 
-Things to do:
-- Implement [EXPLAINING REPRESENTATION LEARNING WITH PERCEPTUAL COMPONENTS](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10647891), similar to relax, adds color importance, shape importance and texture importance. [GitHub Link](https://github.com/olivesgatech/Explaining-Representation-Learning-with-Perceptual-Components)
-- Train 2 more self-supervised representation learning models and compare the results.
-    - SwAW
-    - Berlow twins
-    - VicREG
-- Used gradient based methods on supervised models and compare the results.
-    - Grad-CAM
-    - Opti-CAM
-    - 
-- Start report writing
+In the src directory experiments folder containes code for all the experiments.
 
-Literature Review
-- [Opti-CAM](https://www.semanticscholar.org/reader/fcc080a18a4ff5fb0ff06be5f9c6bc65b0d292e4): 
-    - Saliency maps
-    - Optimization
-    - Opti-CAM
-- 
+Refernces to model code in src directory:
+- moco: Official repository from Facebook -> [link](https://github.com/facebookresearch/moco.git)
+- RELAX: Official repository from author Wickstrom -> [link](https://github.com/Wickstrom/RELAX.git)
+- SimCLR: Pytorch implementation used from training on Cifar10 -> [link](https://github.com/sthalles/SimCLR.git)
+- simclrPRE/simclr-pytorch: get pretrained model on imagenet -> [link](https://github.com/AndrewAtanov/simclr-pytorch.git)
+
